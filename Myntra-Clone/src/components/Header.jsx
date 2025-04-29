@@ -1,3 +1,6 @@
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { ImHappy2 } from "react-icons/im";
+import { FaShoppingBag  } from "react-icons/fa";
 const Header = () => {
   return (
     <header>
@@ -29,21 +32,17 @@ const Header = () => {
       </div>
       <div className="action_bar">
         <div className="action_container">
-          <span className="material-symbols-outlined action_icon">person</span>
+        <IoPersonCircleSharp />
           <span className="action_name">Profile</span>
         </div>
 
         <div className="action_container">
-          <span className="material-symbols-outlined action_icon">
-            favorite
-          </span>
+        <ImHappy2 />
           <span className="action_name">Wishlist</span>
         </div>
 
         <a className="action_container" href="pages/bag.html">
-          <span className="material-symbols-outlined action_icon">
-            shopping_bag
-          </span>
+        <FaShoppingBag />
           <span className="action_name">Bag</span>
           <span className="bag-item-count">0</span>
         </a>
