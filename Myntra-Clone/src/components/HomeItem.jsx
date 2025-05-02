@@ -1,11 +1,11 @@
-
-const HomeItem = ({item}) => {
+const HomeItem = ({ item }) => {
   return (
     <div className="item-container">
       <img className="item-image" src={item.image} alt="item image" />
       <div className="rating">
-        {item.rating.stars} ⭐ | {item.rating.count}
+        {item?.rating?.stars ?? 0} ⭐ | {item?.rating?.count ?? 0}
       </div>
+
       <div className="company-name">{item.company}</div>
       <div className="item-name">{item.item_name}</div>
       <div className="price">
