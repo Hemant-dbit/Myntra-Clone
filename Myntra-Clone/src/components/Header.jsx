@@ -4,9 +4,8 @@ import { IoBag } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 const Header = () => {
+  const bag = useSelector((store) => store.bag);
 
-  const bag = useSelector(store => store.bag);
-  
   return (
     <header>
       <div className="logo_container">
@@ -28,13 +27,13 @@ const Header = () => {
           Studio <sup>New</sup>
         </a>
       </nav>
-      <div className="search_bar">
+      {/* <div className="search_bar">
         <span className="material-symbols-outlined search_icon">search</span>
         <input
           className="search_input"
           placeholder="Search for products, brands and more"
         />
-      </div>
+      </div> */}
       <div className="action_bar">
         <div className="action_container">
           <IoPersonCircleSharp />
